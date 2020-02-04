@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Great+Vibes|Roboto:100,300,400|Tangerine&display=swap');
+
+/*
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'Tangerine', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, header{
+    max-width: 1400px;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+header nav {
+    width: 100%;
+    
+}
+
+.menu-responsive{
+    width: 100%;
+    margin:  0;
+    padding: 0;
+    background: #111;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.res-icon{
+    font-size: 1.5em;
+    color: #fff;
+    padding: 2px;
+}
+
+.res-icon:hover{
+    background: #444;
+}
+
+.list-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-nav li a{
+    display: inline-block;
+    margin: 0;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+    font-size:  1.7rem;
+}
+
+.list-nav li:hover{
+    background: #555;
+}
+
+.bg-home{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(./food/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-content h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 8em;
+}
+
+.bg-content p{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/*Articulos*/
+
+.main{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.articulos{
+    width: 100%;
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+}
+
+.text-des{
+    width: 100%;
+    margin: 3em auto;
+    padding: .5em;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+}
+               
+.text-des h2{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.text-des p{
+    font-weight: 300;
+    font-size: 2em;
+}
+
+/*******Food One******/
+
+.food-one{
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.food-one .right-one{
+    width: 50%;
+    background: #ffff99;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: #111;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.food-one .right-one h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.food-one .right-one p {
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+
+.food-one .left-one{
+    width: 50%;
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(./food/index.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: #fff;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.food-one .left-one h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: .5em;
+}
+
+.food-one .left-one p {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.btn-more{
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.3em;
+    background: rgba(0,0,0, 0.0);
+    color: #fff;
+    border: none;
+    border: 3px solid #fff;
+    text-decoration: none;
+
+}
+
+.btn-more:hover{
+    cursor: pointer;
+    color: #111;
+    background: #fff;
+}
+
+
+
+/****Food Two****/
+
+.food-two{
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.food-two .right-two{
+    width: 50%;
+    background: #ffff99;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: #111;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.food-two .right-two h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.food-two .right-two p {
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+/**Chage***/
+
+.food-two .left-two{
+    width: 50%;
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(./food/index2.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: #fff;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.food-two .left-two h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: .5em;
+}
+
+
+.food-two .left-two p {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+/******Food-Tree**********/
+
+.food-tree{
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.food-tree .right-tree{
+    width: 50%;
+    background: #ffff99;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: #111;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.food-tree .right-tree h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.food-tree .right-tree p {
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+
+.food-tree .left-tree{
+    width: 50%;
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url(./food/index3.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: #fff;
+    display: flex; /*centrado absoluto*/
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 1em;
+}
+
+.food-tree .left-tree h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: .5em;
+}
+
+.food-tree .left-tree p {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+}
+
+
+
+/****Page Services****/
+
+.text-slide {
+    width: 100%;
+    padding-top: 4em;
+    box-sizing: border-box;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    margin: auto;
+}
+
+.text-slide h1{
+    text-align: center;
+    font-size: 3em;
+    padding: .5em;
+}
+
+.text-slide p{
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+
+}
+
+.swiper-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 3em;
+    padding-bottom: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 1em;
+    background: #ffffb3;
+    border-radius: 1em;
+}
+
+.swiper-slide .img img{
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 1em;
+}
+
+.swiper-slide .des h3{
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+    font-weight: unset;
+}
+
+/****Page Services****/
+
+
+
+/****Page our***/
+
+.info-our{
+    width: 90%;
+    margin: auto;
+    font-family: 'Great Vibes', cursive;
+}
+
+.info-header{
+    width: 100%;
+    margin: auto;
+    padding-top: 4em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.info-header h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.info-header .img-our img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.our-des {
+    width: 100%;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.our-des p{
+    font-size: 2em;
+}
+
+.text-our{
+    width: 100%;
+    padding: 0;
+    margin: 1em auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.art-our{
+    background:#ffd1b3;
+    padding: 10px;
+    margin: 1em;
+    border-radius: 1em;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.art-our p{
+    font-size: 1.5em;
+}
+
+.text-our-end{
+    width: 100%;
+    padding: 1em;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.text-our-end h2{
+    font-size: 3em;
+}
+
+.text-our-end p{
+    font-size: 1.5em;
+}
+
+/*Footer*/
+
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+}
+
+footer ul li i{
+    color: #fff;
+}
+
+footer ul li:hover{
+    background: #444;
+    border-radius: 10px;
+}
+
+footer p{
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    padding: 3px;
+}
+
+
+/*Media querys*/
+
+@media screen and (max-width: 800px){
+
+    .list-nav {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: -60%;
+        transition: all .5s ease-in-out;
+    }
+    
+    .list-nav li {
+        border-top: 1px solid rgba(250, 250, 250, 0.1);
+    }
+
+    
+    .add{
+        margin-left: -60%;
+        margin: 0;
+    }
+
+    .menu-responsive{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .bg-content h1{
+        font-size: 6em;
+    }
+    .bg-content p{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .food-one, .food-two, .food-tree {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .text-our{
+        display: flex;
+        flex-wrap: wrap; 
+        box-sizing: border-box;
+    }
+    
+    .art-our{
+        width: 80%;
+        height: 300px;
+        display: flex;
+    }
+}
+
+
+
